@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginPackage xmlns="http://www.sdl.com/Plugins/PluginPackage/1.0">
+  <PlugInName>SDL.Trados.MTUOC</PlugInName>
+  <Version>1.1.2</Version>
+  <Description>MTUOC - MACHINE TRANSLATION</Description>
+  <Author></Author>
+  <Include>
+    <File>System.Memory.dll</File>
+    <File>Newtonsoft.Json.dll</File>
+    <File>Polly.dll</File>
+    <File>Nlog.dll</File>
+    <File>Microsoft.Extensions.DependencyInjection.Abstractions.dll</File>
+    <File>Microsoft.Extensions.DependencyInjection.dll</File>
+    <File>Microsoft.Extensions.Http.dll</File>
+    <File>Microsoft.Bcl.AsyncInterfaces.dll</File>
+    <File>System.Threading.Tasks.Extensions.dll</File>
+    <File>Microsoft.Extensions.Logging.dll</File>
+    <File>Microsoft.Extensions.Logging.Abstractions.dll</File>
+    <File>Microsoft.Extensions.Options.dll</File>
+  </Include>
+  <RequiredProduct name="SDLTradosStudio" minversion="15.0" maxversion="15.9" />
+</PluginPackage>

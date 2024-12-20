@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="PrimaryColor" Color="#000074"/>
+    <SolidColorBrush x:Key="SecondaryColor" Color="#70E2E8"/>
+    <SolidColorBrush x:Key="DisabledColor" Color="#ADB0B0"/>
+    <SolidColorBrush x:Key="EditTextColor" Color="#1C2833"/>
+    <SolidColorBrush x:Key="LabelTextColor" Color="#586776"/>
+    <SolidColorBrush x:Key="ButtonTextColor" Color="#FBFCFC"/>
+    <Color x:Key="ShadowsColor" R="182" G="194" B="192"/>
+</ResourceDictionary>

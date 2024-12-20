@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01635E05-E4C0-46B0-B949-05EF1465D5B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDL.Trados.MTUOC</RootNamespace>
+    <AssemblyName>SDL.Trados.MTUOC</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PluginDeploymentPath>$(AppData)\Trados\Trados Studio\18\Plugins</PluginDeploymentPath>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug2019|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug2019\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Version2019</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug2021|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug2021\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Version2021</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug2022|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug2022\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Version2022</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug2024|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug2024\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Version2024</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release2019|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release2019\</OutputPath>
+    <DefineConstants>TRACE;Version2019</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release2021|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release2021\</OutputPath>
+    <DefineConstants>TRACE;Version2021</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release2022|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release2022\</OutputPath>
+    <DefineConstants>TRACE;Version2022</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release2024|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release2024\</OutputPath>
+    <DefineConstants>TRACE;Version2024</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Choose>
+    <!--V. 2024-->
+    <When Condition=" '$(Configuration)'=='Debug2024' Or '$(Configuration)'=='Release2024' ">
+      <ItemGroup>
+        <Reference Include="Sdl.Core.Globalization">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.Core.Globalization.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.Core">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.LanguagePlatform.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.TranslationMemory">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.LanguagePlatform.TranslationMemory.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.TranslationMemoryApi">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.LanguagePlatform.TranslationMemoryApi.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.Desktop.IntegrationApi">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.Desktop.IntegrationApi.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.Desktop.IntegrationApi.Extensions">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.Desktop.IntegrationApi.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.Core.Globalization.Async">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio18\Sdl.Core.Globalization.Async.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+      <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="NLog" Version="5.3.4" />
+        <PackageReference Include="Polly" Version="8.5.0" />
+        <Content Include="pluginpackage.manifest.2024.xml">
+          <Visible>True</Visible>
+        </Content>
+      </ItemGroup>
+    </When>
+    <!--V. 2022-->
+    <When Condition=" '$(Configuration)'=='Debug2022' Or '$(Configuration)'=='Release2022' ">
+      <ItemGroup>
+        <Reference Include="Sdl.Core.Globalization">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio17\Sdl.Core.Globalization.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.Core">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio17\Sdl.LanguagePlatform.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.TranslationMemory">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio17\Sdl.LanguagePlatform.TranslationMemory.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.TranslationMemoryApi">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio17\Sdl.LanguagePlatform.TranslationMemoryApi.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.Desktop.IntegrationApi">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio17\Sdl.Desktop.IntegrationApi.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.Desktop.IntegrationApi.Extensions">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio17\Sdl.Desktop.IntegrationApi.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.Core.Globalization.Async">
+          <HintPath>$(MSBuildProgramFiles32)\Trados\Trados Studio\Studio17\Sdl.Core.Globalization.Async.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+      <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <PackageReference Include="NLog" Version="5.0.4" />
+        <PackageReference Include="Polly" Version="7.2.3" />
+        <PackageReference Include="Sdl.Core.PluginFramework">
+          <Version>2.1.0</Version>
+        </PackageReference>
+        <PackageReference Include="Sdl.Core.PluginFramework.Build">
+          <Version>17.0.0</Version>
+        </PackageReference>
+      </ItemGroup>
+    </When>
+    <!--V. 2021-->
+    <When Condition=" '$(Configuration)'=='Debug2021' Or '$(Configuration)'=='Release2021' ">
+      <ItemGroup>
+        <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio16\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="NLog">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio16\NLog.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.Core.Globalization">
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio16\Sdl.Core.Globalization.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Sdl.Desktop.IntegrationApi">
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio16\Sdl.Desktop.IntegrationApi.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.Desktop.IntegrationApi.Extensions">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio16\Sdl.Desktop.IntegrationApi.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.Core">
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio16\Sdl.LanguagePlatform.Core.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.TranslationMemory">
+          <Private>True</Private>
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio16\Sdl.LanguagePlatform.TranslationMemory.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.TranslationMemoryApi">
+          <Private>True</Private>
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio16\Sdl.LanguagePlatform.TranslationMemoryApi.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+      <ItemGroup>
+        <PackageReference Include="Polly" Version="7.2.3" />
+      </ItemGroup>
+    </When>
+    <!--V. 2019-->
+    <When Condition=" '$(Configuration)'=='Debug2019' Or '$(Configuration)'=='Release2019' ">
+      <ItemGroup>
+        <Reference Include="Newtonsoft.Json">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio15\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="NLog">
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio15\NLog.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.Core.Globalization">
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio15\Sdl.Core.Globalization.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Sdl.Desktop.IntegrationApi">
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio15\Sdl.Desktop.IntegrationApi.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.Desktop.IntegrationApi.Extensions">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio15\Sdl.Desktop.IntegrationApi.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.Core">
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio15\Sdl.LanguagePlatform.Core.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.TranslationMemory">
+          <Private>True</Private>
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio15\Sdl.LanguagePlatform.TranslationMemory.dll</HintPath>
+        </Reference>
+        <Reference Include="Sdl.LanguagePlatform.TranslationMemoryApi">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>$(MSBuildProgramFiles32)\SDL\SDL Trados Studio\Studio15\Sdl.LanguagePlatform.TranslationMemoryApi.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+      <ItemGroup>
+        <PackageReference Include="Polly" Version="7.2.3" />
+      </ItemGroup>
+    </When>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Core" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\CacheItemDto.cs" />
+    <Compile Include="DTO\Constants.cs" />
+    <Compile Include="DTO\LanguageDto.cs" />
+    <Compile Include="DTO\PreTranslateSegmentDto.cs" />
+    <Compile Include="DTO\HttpRequestDto.cs" />
+    <Compile Include="DTO\HttpResponseDto.cs" />
+    <Compile Include="DTO\SettingsDto.cs" />
+    <Compile Include="DTO\TagDto.cs" />
+    <Compile Include="DTO\TranslationTypeDto.cs" />
+    <Compile Include="Logger\NlogConfig.cs" />
+    <Compile Include="PluginResources.ca.Designer.cs">
+      <DependentUpon>PluginResources.ca.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="PluginResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PluginResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginResources.es.Designer.cs">
+      <DependentUpon>PluginResources.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\PluginProperties.cs" />
+    <Compile Include="Services\Cache\CacheService.cs" />
+    <Compile Include="Services\Cache\ICacheService.cs" />
+    <Compile Include="Services\Http\AppHttpClientFactory.cs" />
+    <Compile Include="Services\LanguageSupport\ILanguageSupportService.cs" />
+    <Compile Include="Services\LanguageSupport\LanguageSupportService.cs" />
+    <Compile Include="Services\ServicesConfig.cs" />
+    <Compile Include="Services\Tags\ITagsServiceV2.cs" />
+    <Compile Include="Services\Tags\ITagsService.cs" />
+    <Compile Include="Services\Tags\TagsServiceV2.cs" />
+    <Compile Include="Services\Tags\TagsService.cs" />
+    <Compile Include="Services\Http\HttpService.cs" />
+    <Compile Include="Services\Http\IHttpService.cs" />
+    <Compile Include="Services\WebSocketClient\IWebSocketService.cs" />
+    <Compile Include="Services\WebSocketClient\WebSocketFactory.cs" />
+    <Compile Include="Services\WebSocketClient\WebSocketService.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="Studio\MTUOCProvider.cs" />
+    <Compile Include="Studio\MTUOCProviderFactory.cs" />
+    <Compile Include="Studio\MTUOCProviderLanguageDirection.cs" />
+    <Compile Include="Studio\MTUOCProviderLanguageDirectionV2.cs" />
+    <Compile Include="Studio\MTUOCProviderWinFormsUI.cs" />
+    <Compile Include="UI\ConnectionPage.xaml.cs">
+      <DependentUpon>ConnectionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\ActivityIndicatorControl.xaml.cs">
+      <DependentUpon>ActivityIndicatorControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\AuthControl.xaml.cs">
+      <DependentUpon>AuthControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\AdvancedControl.xaml.cs">
+      <DependentUpon>AdvancedControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\CheckConnectionControl.xaml.cs">
+      <DependentUpon>CheckConnectionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\TranslationsControl.xaml.cs">
+      <DependentUpon>TranslationsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\UrlControl.xaml.cs">
+      <DependentUpon>UrlControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LogoMTUOC.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\LogoMTUOC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\LogoUOC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\LogoUOC.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <EmbeddedResource Include="PluginResources.ca.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PluginResources.ca.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginResources.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PluginResources.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PluginResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+    <None Include="Resources\countries.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UI\ConnectionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Controls\ActivityIndicatorControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Controls\AuthControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Controls\AdvancedControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Controls\CheckConnectionControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Controls\TranslationsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Controls\UrlControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Styles\ComboBoxStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Styles\ButtonStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Styles\Colors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Styles\LabelStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Styles\TextBoxStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http">
+      <Version>9.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Sdl.Core.PluginFramework">
+      <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Sdl.Core.PluginFramework.Build">
+      <Version>18.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pluginpackage.manifest.2019.xml" />
+    <Content Include="pluginpackage.manifest.2024.xml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <CreatePluginPackage>true</CreatePluginPackage>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="PreBuild">
+    <Copy SourceFiles="@(XmlInput)" DestinationFiles="@(XmlOutput)" />
+  </Target>
+  <ItemGroup>
+    <XmlOutput Include="pluginpackage.manifest.xml">
+      <Visible>False</Visible>
+    </XmlOutput>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pluginpackage.manifest.2021.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pluginpackage.manifest.2022.xml" />
+  </ItemGroup>
+  <Target Name="BeforeClean">
+    <Delete Files="@(XmlOutput)" />
+  </Target>
+  <PropertyGroup>
+    <PreBuildEvent>set TARGET_FILE=$(ProjectDir)pluginpackage.manifest.xml
+set SOURCE_FILE=
+
+if "$(Configuration)"=="Debug2024" set SOURCE_FILE=$(ProjectDir)pluginpackage.manifest.2024.xml
+if "$(Configuration)"=="Release2024" set SOURCE_FILE=$(ProjectDir)pluginpackage.manifest.2024.xml
+if "$(Configuration)"=="Debug2019" set SOURCE_FILE=$(ProjectDir)pluginpackage.manifest.2019.xml
+if "$(Configuration)"=="Release2019" set SOURCE_FILE=$(ProjectDir)pluginpackage.manifest.2019.xml
+if "$(Configuration)"=="Debug2021" set SOURCE_FILE=$(ProjectDir)pluginpackage.manifest.2021.xml
+if "$(Configuration)"=="Release2021" set SOURCE_FILE=$(ProjectDir)pluginpackage.manifest.2021.xml
+if "$(Configuration)"=="Debug2022" set SOURCE_FILE=$(ProjectDir)pluginpackage.manifest.2022.xml
+if "$(Configuration)"=="Release2022" set SOURCE_FILE=$(ProjectDir)pluginpackage.manifest.2022.xml
+
+if not "%25SOURCE_FILE%25"=="" copy /Y "%25SOURCE_FILE%25" "%25TARGET_FILE%25"</PreBuildEvent>
+  </PropertyGroup>
+</Project>
