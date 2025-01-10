@@ -9,8 +9,6 @@
     <File>Newtonsoft.Json.dll</File>
     <File>Polly.dll</File>
     <File>Nlog.dll</File>
-    <File>Microsoft.Extensions.DependencyInjection.Abstractions.dll</File>
-    <File>Microsoft.Extensions.DependencyInjection.dll</File>
     <File>Microsoft.Extensions.Http.dll</File>
     <File>Microsoft.Bcl.AsyncInterfaces.dll</File>
     <File>System.Threading.Tasks.Extensions.dll</File>

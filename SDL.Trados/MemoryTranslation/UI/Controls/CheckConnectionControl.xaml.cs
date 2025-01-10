@@ -47,7 +47,7 @@ namespace SDL.Trados.MTUOC.UI.Controls
                     result = _httpService.SendMessage(settings, text, null, null, string.Empty, true)?.Tgt);
                 Dispatcher.Invoke(() => messageTextBoxResult.Text = result);
             }
-            catch
+            catch (Exception ex)
             {
                 messageTextBoxResult.Text = string.Empty;
             }

@@ -8,6 +8,7 @@
     <File>System.Memory.dll</File>
     <File>Newtonsoft.Json.dll</File>
     <File>Polly.dll</File>
+    <File>Nlog.dll</File>
     <File>Microsoft.Extensions.DependencyInjection.Abstractions.dll</File>
     <File>Microsoft.Extensions.DependencyInjection.dll</File>
     <File>Microsoft.Extensions.Http.dll</File>
@@ -18,5 +19,5 @@
     <File>Microsoft.Extensions.Options.dll</File>
   </Include>
   <!--V. 2021-->
-  <RequiredProduct name="TradosStudio" minversion="16.0" maxversion="16.9" />
+  <RequiredProduct name="SDLTradosStudio" minversion="16.0" maxversion="16.9" />
 </PluginPackage>

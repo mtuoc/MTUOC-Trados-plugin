@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
+using NLog;
 using Sdl.LanguagePlatform.Core;
 using Sdl.LanguagePlatform.TranslationMemoryApi;
 using SDL.Trados.MTUOC.DTO;
@@ -11,6 +12,7 @@ namespace SDL.Trados.MTUOC.Studio
 {
     public class MTUOCProvider : ITranslationProvider
     {
+        private static readonly Logger _logger = NLog.LogManager.GetCurrentClassLogger();
         private SettingsDto _settings;
         private readonly TranslationProviderUriBuilder _uriBuilder;
         private readonly ILanguageSupportService _languageSupportService;
